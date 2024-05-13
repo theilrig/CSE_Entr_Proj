@@ -3,6 +3,8 @@
 # Import and initialize the pygame library
 import pygame
 pygame.init()
+import random
+from ClassLetter import Letter
 
 #import game_code
 
@@ -28,8 +30,14 @@ while running:
     screen.fill((145,182,255))
 
 
-    intro_text = font.render('Type the letter you see', True, (0, 0, 0))  # Text color is white, background color is black
-    screen.blit(intro_text, (95,10))  # Position the text at (100, 100)
+    intro_text = font.render('Type the letter you see', True, (0, 0, 0)) 
+
+    letter = font.render('T', True, (0, 0, 0)) 
+
+    #letter_spawn = (lettersOnScreen*20, 40)
+
+    screen.blit(intro_text, (95,10))
+    screen.blit(letter)
     # Flip the display
     pygame.display.flip()
 # Done! Time to quit.
