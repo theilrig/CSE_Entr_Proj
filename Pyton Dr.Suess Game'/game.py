@@ -152,6 +152,6 @@ while running and lives > 0:
         timer()
 
 # Done! Time to quit.
-print(f"You gotv{lettersUsed} letters. Try again next time!")
+print(f"You got {lettersUsed} letters. Try again next time!")
 pygame.quit()
 sys.exit()
