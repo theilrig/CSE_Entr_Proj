@@ -1,3 +1,0 @@
-class Letter:
-    def __init__(font, spawn):
-        ...
